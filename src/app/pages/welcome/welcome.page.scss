@@ -1,10 +1,35 @@
-.slider{
-    height:100vh;
-    width:auto; 
-  }
-  
-.slider-slide {
-    height: 100vh;
-    width: auto;
+ion-content{
+    ion-slides{
+        height: 100vh;
+        width: auto;
+        ion-slide{
+            height: 100vh;
+            width: auto;
+            div{
+                ion-img{
+                    width: 70vw;
+                    margin: auto;
+                    margin-bottom: 70px;
+                }
+                ion-text{
+                    p{ 
+                        font-size: 17px;    
+                        font-family: 'Poppins', sans-serif;
+                        font-weight: 500;
+                        margin: 0 35px 0 35px;
+                    }
+                }
+            }
+            div.btns {
+                position: absolute;
+                bottom: 35px;
+                ion-button{
+                    width: 40vw;
+                }
+                ion-button:first-child{
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
 }
-

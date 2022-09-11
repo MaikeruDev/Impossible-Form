@@ -1,13 +1,70 @@
 <ion-content>
-  <ion-slides class="slider" mode="ios" pager="ios" scrollbar="ios">
-    <ion-slide class="slider-slides">
-      <h1>Awesome Slide Content1</h1>
+  <ion-slides mode="ios" pager="ios" scrollbar="ios">
+
+    <ion-slide>
+      <div>
+        <ion-img src="../../../assets/illustrations/slide1.svg"></ion-img>
+        <ion-text>
+          <p>Welcome to the Impossible Form!</p>
+        </ion-text>
+      </div>
     </ion-slide>
-    <ion-slide class="slider-slides">
-      <h1>Awesome Slide Content2</h1>
+
+    <ion-slide>
+      <div>
+        <ion-img src="../../../assets/illustrations/slide2.svg"></ion-img>
+        <ion-text>
+          <p>Are you getting bored of simple and easy to use forms?</p>
+        </ion-text>
+      </div>
     </ion-slide>
-    <ion-slide class="slider-slides">
-      <h1>Awesome Slide Content3</h1>
+
+    <ion-slide>
+      <div>
+        <ion-img src="../../../assets/illustrations/slide3.svg"></ion-img>
+        <ion-text>
+          <p>Our design team gave their best to make forms more challenging and interesting!</p>
+        </ion-text>
+      </div>
     </ion-slide>
+
+    <ion-slide>
+      <div>
+        <ion-img src="../../../assets/illustrations/slide4.svg"></ion-img>
+        <ion-text>
+          <p>Try out our challenge of the Impossible form...</p>
+        </ion-text>
+      </div>
+    </ion-slide>
+
+    <ion-slide>
+      <div>
+        <ion-img src="../../../assets/illustrations/slide5.svg"></ion-img>
+        <ion-text>
+          <p>... and become one of the few winners WORLDWIDE!</p>
+        </ion-text>
+      </div>
+    </ion-slide>
+
+    <ion-slide>
+      <div>
+        <ion-img src="../../../assets/illustrations/slide6.svg"></ion-img>
+        <ion-text>
+          <p>Start now!</p>
+        </ion-text>
+      </div>
+
+      <div class="btns">
+        <ion-button (click)="onClick()">
+          Sign up
+        </ion-button>
+        <ion-button fill="outline" (click)="onClick()">
+          Sign in
+        </ion-button>
+      </div>
+    </ion-slide>
+
   </ion-slides>
+
+  
 </ion-content>
