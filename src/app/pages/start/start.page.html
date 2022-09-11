@@ -1,0 +1,42 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="onClick()">
+        <ion-icon slot="icon-only" name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div>
+    <ion-card-title>Create</ion-card-title>
+    <ion-card-title>Account</ion-card-title>
+  </div>
+  
+  <ion-item lines="none">
+    <ion-label position="stacked">Your Email</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+  <ion-item lines="none">
+    <ion-label position="stacked">Password</ion-label>
+    <ion-input type="password"></ion-input>
+  </ion-item>
+  <ion-item lines="none">
+    <ion-label position="stacked">Repeat Password</ion-label>
+    <ion-input type="password"></ion-input>
+  </ion-item>
+
+  <ion-button expand="block" (click)="createAccount()">
+    Create Account
+  </ion-button>
+
+  <ion-button expand="block" fill="outline" (click)="google()">
+    <ion-icon slot="start" name="logo-google"></ion-icon>
+    Sign up with Google
+  </ion-button>
+
+  <ion-text>
+    <p>Already have an account? <a>Log in</a></p>
+  </ion-text>
+</ion-content>

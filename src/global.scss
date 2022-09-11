@@ -24,3 +24,13 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+.swiper-pagination-bullet{
+    background-color: rgb(112, 112, 112);
+}
+
+.swiper-pagination-bullet-active{
+    padding: 0 15px 0 15px;
+    border-radius: 15px;
+    background: var(--bullet-background-active);
+}
