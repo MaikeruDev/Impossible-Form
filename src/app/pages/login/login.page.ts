@@ -10,6 +10,9 @@ export class LoginPage implements OnInit {
 
   constructor(public modalController: ModalController) { }
 
+  username: any;
+  password: any;
+
   ngOnInit() {
   }
 

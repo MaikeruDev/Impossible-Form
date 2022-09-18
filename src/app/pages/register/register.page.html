@@ -15,16 +15,16 @@
   </div>
   
   <ion-item lines="none">
-    <ion-label position="stacked">Your Email</ion-label>
-    <ion-input></ion-input>
+    <ion-label position="stacked"><span>Your Email</span><span *ngIf="email_input === ''" id="missing_email">Please fill in this field.</span></ion-label>
+    <ion-input [(ngModel)]="email_input" type="email"></ion-input>
   </ion-item>
   <ion-item lines="none">
-    <ion-label position="stacked">Password</ion-label>
-    <ion-input type="password"></ion-input>
+    <ion-label position="stacked"><span>Username</span><span *ngIf="username_input === ''" id="missing_username">Please fill in this field.</span></ion-label>
+    <ion-input [(ngModel)]="username_input" type="text"></ion-input>
   </ion-item>
   <ion-item lines="none">
-    <ion-label position="stacked">Repeat Password</ion-label>
-    <ion-input type="password"></ion-input>
+    <ion-label position="stacked"><span>Password</span><span *ngIf="password_input === ''" id="missing_pwd">Please fill in this field.</span></ion-label>
+    <ion-input [(ngModel)]="password_input" type="password"></ion-input>
   </ion-item>
 
   <ion-button expand="block" (click)="createAccount()">
